@@ -6,7 +6,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
     <Name>OS VectorMap&#174; Local (road centrelines) (backdrop style)</Name>
     <UserStyle>
       <Title>OS OnDemand WMS - Spring 2012 release</Title>
-      <Abstract>OS VectorMap&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2012.</Abstract>
+      <Abstract>OS VectorMap&#174; Local. Ordnance Survey. &#169; Crown copyright and database rights 2014.</Abstract>
                 
 <!--  Local Street/Private Road Labels  -->               
                 
