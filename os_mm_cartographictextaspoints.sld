@@ -9,7 +9,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
       <Abstract>OS MasterMap&#174; Topography Layer. Ordnance Survey. &#169; Crown copyright and database rights 2012.</Abstract>
       
       <!--  Cartographic Text  -->
-      <!--  Adjust zoom levels to cut out above 1:3050 -->
+      
       <!--  Black text  -->
       
       <FeatureTypeStyle>
@@ -24,10 +24,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -88,10 +84,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -205,7 +197,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           </TextSymbolizer>
         </Rule>
         
-        
         <Rule>
           <Name>Black text - 1:1,300 to 1:1,850 (a)</Name>
           <ogc:Filter>
@@ -271,6 +262,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">8</VendorOption>
           </TextSymbolizer>
         </Rule>
+		
         <Rule>
           <Name>Black text - 1:1,300 to 1:1,850 (b)</Name>
           <ogc:Filter>
@@ -298,10 +290,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -373,10 +361,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>heritageText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
             </ogc:And>
@@ -415,7 +399,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Fill>
             <VendorOption name="forceLeftToRight">false</VendorOption>
             <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="maxDisplacement">0</VendorOption>
+            <VendorOption name="maxDisplacement">4</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -474,8 +458,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         
         <!-- Admin text 1:2400 to 1:3050 -->
+		
         <Rule>
-          <Name>Administrative text - 1:2,400 to 1:3,050</Name>
+          <Name>Admin text - 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -529,7 +514,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         <!--  Administrative text  -->
         
         <Rule>
-          <Name>Administrative text - 1:1,850 to 1:2,400</Name>
+          <Name>Admin text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsNotEqualTo>
@@ -585,7 +570,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         
         <Rule>
-          <Name>Administrative text - 1:1,300 to 1:1,850</Name>
+          <Name>Admin text - 1:1,300 to 1:1,850</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsNotEqualTo>
@@ -688,7 +673,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Fill>
             <VendorOption name="forceLeftToRight">false</VendorOption>
             <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="maxDisplacement">0</VendorOption>
+            <VendorOption name="maxDisplacement">4</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -958,7 +943,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Fill>
             <VendorOption name="forceLeftToRight">false</VendorOption>
             <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="maxDisplacement">0</VendorOption>
+            <VendorOption name="maxDisplacement">4</VendorOption>
           </TextSymbolizer>
         </Rule>
         
@@ -968,16 +953,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Water text - 1:3,050 to 1:3,496</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
+                <ogc:Literal>waterText</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
@@ -1026,16 +1005,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Water text - 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
+                <ogc:Literal>waterText</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
@@ -1084,16 +1057,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Water text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
+                <ogc:Literal>waterText</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
                 <ogc:Literal>2</ogc:Literal>
@@ -1146,16 +1113,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
           <Name>Water text - 1:1,300 to 1:1,850</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
+                <ogc:Literal>waterText</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
                 <ogc:Literal>1.75</ogc:Literal>
@@ -1205,23 +1166,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
         </Rule>
         
         <Rule>
-          <Name>Water text - 1:35 to 1:1,300</Name>
+          <Name>Water text - 1:38 to 1:1,300</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
+                <ogc:Literal>waterText</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>35</MinScaleDenominator>
@@ -1258,7 +1213,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </Fill>
             <VendorOption name="forceLeftToRight">false</VendorOption>
             <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="maxDisplacement">0</VendorOption>
+            <VendorOption name="maxDisplacement">4</VendorOption>
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>      
