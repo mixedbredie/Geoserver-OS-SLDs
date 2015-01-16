@@ -4,7 +4,7 @@ Geoserver-OS-SLDs
 Styled Layer Descriptor files for **OS VectorMap District** layers in Geoserver.
 For layers loaded from the OS OpenData shapefiles.
 
-Includes both backdrop and greyscale styles.
+Includes and greyscale styles and SVG files.
 
 Based on the Ordance Survey's SLD files for their OnDemand WMS.
 Ordnance Survey. &#169; Crown copyright and database rights 2012.
