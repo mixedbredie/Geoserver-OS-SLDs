@@ -3,7 +3,7 @@
 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS MasterMap&#174; Topography Layer (text) (backdrop style)</Name>
+    <Name>OS MasterMap&#174; Topography Layer (text) (greyscale style)</Name>
     <UserStyle>
       <Title>OS OnDemand WMS - Spring 2012 release</Title>
       <Abstract>OS MasterMap&#174; Topography Layer. Ordnance Survey. &#169; Crown copyright and database rights 2012.</Abstract>
