@@ -1,4 +1,4 @@
-Geoserver-OS-SLDs
+Geoserver-OS-SLDs: VectorMap District
 =================
 
 Styled Layer Descriptor files for **OS VectorMap District** layers in Geoserver.
