@@ -1,5 +1,5 @@
-Geoserver-OS-SLDs
-=================
+Geoserver-OS-SLDs: Meridian2
+============================
 
 Styled Layer Descriptor files for **OS Meridian2** layers in Geoserver.
 These have been created for layers loaded from the OS OpenData shapefiles.
