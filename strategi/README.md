@@ -1,5 +1,5 @@
-Geoserver-OS-SLDs
-=================
+Geoserver-OS-SLDs: Strategi
+===========================
 
 Styled Layer Descriptor files for **OS Strategi** layers in Geoserver.
 For layers loaded from the OS OpenData shapefiles.
