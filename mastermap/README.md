@@ -1,5 +1,5 @@
-Geoserver-OS-SLDs
-=================
+Geoserver-OS-SLDs: MasterMap
+============================
 
 Styled Layer Descriptor files for **OS MasterMap** layers in Geoserver.
 For layers loaded from **GML** using **GoLoader**.
