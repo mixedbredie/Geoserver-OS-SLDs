@@ -1,5 +1,5 @@
-Geoserver-OS-SLDs
-=================
+Geoserver-OS-SLDs: VectorMap Local
+==================================
 
 Styled Layer Descriptor files for **OS VectorMap Local** layers in Geoserver.
 
