@@ -104,7 +104,7 @@
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-		</se:Rule>
+        </se:Rule>
         <se:Rule>
           <se:Name>A Road, Collapsed Dual Carriageway</se:Name>
           <se:Description>
@@ -266,12 +266,12 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-	  
-	  <!-- Road number labels -->
-	  
-	  <se:FeatureTypeStyle>
-	    <se:Rule>
-		  <se:Name>Motorway Labels</se:Name>
+
+      <!-- Road number labels -->
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Motorway Labels</se:Name>
           <se:Description>
             <se:Title>Motorway Labels</se:Title>
           </se:Description>
@@ -281,7 +281,7 @@
               <ogc:Literal>Motorway</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-		  <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>roadnumber</ogc:PropertyName>
@@ -289,208 +289,20 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">14</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
                 <se:PerpendicularOffset>0</se:PerpendicularOffset>
               </se:LinePlacement>
             </se:LabelPlacement>
-			<se:Halo>
+            <se:Halo>
               <se:Radius>1.5</se:Radius>
               <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#000</se:SvgParameter>
-            </se:Fill>
-            <se:Priority>880</se:Priority>
-            <se:VendorOption name="spaceAround">0</se:VendorOption>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
-            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
-            <se:VendorOption name="repeat">600</se:VendorOption>
-            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
-            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
-          </se:TextSymbolizer>
-	    </se:Rule>
-		<se:Rule>
-          <se:Name>Motorway, Collapsed Dual Carriageway Labels</se:Name>
-          <se:Description>
-            <se:Title>Motorway, Collapsed Dual Carriageway Labels</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>classifica</ogc:PropertyName>
-              <ogc:Literal>Motorway, Collapsed Dual Carriageway</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-		  <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
-            <se:Label>
-              <ogc:PropertyName>roadnumber</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement>
-                <se:PerpendicularOffset>0</se:PerpendicularOffset>
-              </se:LinePlacement>
-            </se:LabelPlacement>
-			<se:Halo>
-              <se:Radius>1.5</se:Radius>
-              <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#000</se:SvgParameter>
-            </se:Fill>
-            <se:Priority>880</se:Priority>
-            <se:VendorOption name="spaceAround">0</se:VendorOption>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
-            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
-            <se:VendorOption name="repeat">600</se:VendorOption>
-            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
-            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
-          </se:TextSymbolizer>
-		</se:Rule>
-		<se:Rule>
-          <se:Name>Primary Road Labels</se:Name>
-          <se:Description>
-            <se:Title>Primary Road Labels</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>classifica</ogc:PropertyName>
-              <ogc:Literal>Primary Road</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-		  <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
-            <se:Label>
-              <ogc:PropertyName>roadnumber</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">15</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement>
-                <se:PerpendicularOffset>0</se:PerpendicularOffset>
-              </se:LinePlacement>
-            </se:LabelPlacement>
-			<se:Halo>
-              <se:Radius>1.5</se:Radius>
-              <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#000</se:SvgParameter>
-            </se:Fill>
-            <se:Priority>880</se:Priority>
-            <se:VendorOption name="spaceAround">0</se:VendorOption>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
-            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
-            <se:VendorOption name="repeat">600</se:VendorOption>
-            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
-            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
-          </se:TextSymbolizer>
-		</se:Rule>
-		<se:Rule>
-          <se:Name>Primary Road, Collapsed Dual Carriageway Labels</se:Name>
-          <se:Description>
-            <se:Title>Primary Road, Collapsed Dual Carriageway Labels</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>classifica</ogc:PropertyName>
-              <ogc:Literal>Primary Road, Collapsed Dual Carriageway</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-		  <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
-            <se:Label>
-              <ogc:PropertyName>roadnumber</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">15</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement>
-                <se:PerpendicularOffset>0</se:PerpendicularOffset>
-              </se:LinePlacement>
-            </se:LabelPlacement>
-			<se:Halo>
-              <se:Radius>1.5</se:Radius>
-              <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#000</se:SvgParameter>
-            </se:Fill>
-            <se:Priority>880</se:Priority>
-            <se:VendorOption name="spaceAround">0</se:VendorOption>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
-            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
-            <se:VendorOption name="repeat">600</se:VendorOption>
-            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
-            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
-          </se:TextSymbolizer>
-		</se:Rule>
-		<se:Rule>
-          <se:Name>A Road Labels</se:Name>
-          <se:Description>
-            <se:Title>A Road Labels</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>classifica</ogc:PropertyName>
-              <ogc:Literal>A Road</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-		  <se:MaxScaleDenominator>31000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
-            <se:Label>
-              <ogc:PropertyName>roadnumber</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">13</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement>
-                <se:PerpendicularOffset>0</se:PerpendicularOffset>
-              </se:LinePlacement>
-            </se:LabelPlacement>
-			<se:Halo>
-              <se:Radius>1.5</se:Radius>
-              <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#000</se:SvgParameter>
             </se:Fill>
@@ -505,7 +317,195 @@
             <se:VendorOption name="conflictResolution">true</se:VendorOption>            
           </se:TextSymbolizer>
         </se:Rule>
-		<se:Rule>
+        <se:Rule>
+          <se:Name>Motorway, Collapsed Dual Carriageway Labels</se:Name>
+          <se:Description>
+            <se:Title>Motorway, Collapsed Dual Carriageway Labels</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>classifica</ogc:PropertyName>
+              <ogc:Literal>Motorway, Collapsed Dual Carriageway</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-size">14</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:LinePlacement>
+                <se:PerpendicularOffset>0</se:PerpendicularOffset>
+              </se:LinePlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000</se:SvgParameter>
+            </se:Fill>
+            <se:Priority>880</se:Priority>
+            <se:VendorOption name="spaceAround">0</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="group">yes</se:VendorOption>
+            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
+            <se:VendorOption name="repeat">600</se:VendorOption>
+            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
+          </se:TextSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Primary Road Labels</se:Name>
+          <se:Description>
+            <se:Title>Primary Road Labels</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>classifica</ogc:PropertyName>
+              <ogc:Literal>Primary Road</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:LinePlacement>
+                <se:PerpendicularOffset>0</se:PerpendicularOffset>
+              </se:LinePlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000</se:SvgParameter>
+            </se:Fill>
+            <se:Priority>880</se:Priority>
+            <se:VendorOption name="spaceAround">0</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="group">yes</se:VendorOption>
+            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
+            <se:VendorOption name="repeat">600</se:VendorOption>
+            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
+          </se:TextSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Primary Road, Collapsed Dual Carriageway Labels</se:Name>
+          <se:Description>
+            <se:Title>Primary Road, Collapsed Dual Carriageway Labels</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>classifica</ogc:PropertyName>
+              <ogc:Literal>Primary Road, Collapsed Dual Carriageway</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:LinePlacement>
+                <se:PerpendicularOffset>0</se:PerpendicularOffset>
+              </se:LinePlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000</se:SvgParameter>
+            </se:Fill>
+            <se:Priority>880</se:Priority>
+            <se:VendorOption name="spaceAround">0</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="group">yes</se:VendorOption>
+            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
+            <se:VendorOption name="repeat">600</se:VendorOption>
+            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
+          </se:TextSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>A Road Labels</se:Name>
+          <se:Description>
+            <se:Title>A Road Labels</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>classifica</ogc:PropertyName>
+              <ogc:Literal>A Road</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>31000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>roadnumber</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:LinePlacement>
+                <se:PerpendicularOffset>0</se:PerpendicularOffset>
+              </se:LinePlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000</se:SvgParameter>
+            </se:Fill>
+            <se:Priority>880</se:Priority>
+            <se:VendorOption name="spaceAround">0</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="group">yes</se:VendorOption>
+            <se:VendorOption name="maxAngleDelta">75</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">450</se:VendorOption>
+            <se:VendorOption name="repeat">600</se:VendorOption>
+            <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>            
+          </se:TextSymbolizer>
+        </se:Rule>
+        <se:Rule>
           <se:Name>A Road, Collapsed Dual Carriageway Labels</se:Name>
           <se:Description>
             <se:Title>A Road, Collapsed Dual Carriageway Labels</se:Title>
@@ -516,28 +516,28 @@
               <ogc:Literal>A Road, Collapsed Dual Carriageway</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-		  <se:MaxScaleDenominator>31000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
+          <se:MaxScaleDenominator>31000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">13</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
                 <se:PerpendicularOffset>0</se:PerpendicularOffset>
               </se:LinePlacement>
             </se:LabelPlacement>
-			<se:Halo>
+            <se:Halo>
               <se:Radius>1.5</se:Radius>
               <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#000</se:SvgParameter>
             </se:Fill>
@@ -551,8 +551,8 @@
             <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
             <se:VendorOption name="conflictResolution">true</se:VendorOption>            
           </se:TextSymbolizer>
-		</se:Rule>
-		<se:Rule>
+        </se:Rule>
+        <se:Rule>
           <se:Name>B Road Labels</se:Name>
           <se:Description>
             <se:Title>B Road Labels</se:Title>
@@ -563,28 +563,28 @@
               <ogc:Literal>B Road</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-		  <se:MaxScaleDenominator>27000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
+          <se:MaxScaleDenominator>27000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">11</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
                 <se:PerpendicularOffset>0</se:PerpendicularOffset>
               </se:LinePlacement>
             </se:LabelPlacement>
-			<se:Halo>
+            <se:Halo>
               <se:Radius>1.5</se:Radius>
               <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#000</se:SvgParameter>
             </se:Fill>
@@ -598,8 +598,8 @@
             <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
             <se:VendorOption name="conflictResolution">true</se:VendorOption>            
           </se:TextSymbolizer>
-		</se:Rule>
-		<se:Rule>
+        </se:Rule>
+        <se:Rule>
           <se:Name>B Road, Collapsed Dual Carriageway Labels</se:Name>
           <se:Description>
             <se:Title>B Road, Collapsed Dual Carriageway Labels</se:Title>
@@ -610,28 +610,28 @@
               <ogc:Literal>B Road, Collapsed Dual Carriageway</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-		  <se:MaxScaleDenominator>27000</se:MaxScaleDenominator>
-		  <se:TextSymbolizer>
+          <se:MaxScaleDenominator>27000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>roadnumber</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">11</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
                 <se:PerpendicularOffset>0</se:PerpendicularOffset>
               </se:LinePlacement>
             </se:LabelPlacement>
-			<se:Halo>
+            <se:Halo>
               <se:Radius>1.5</se:Radius>
               <se:Fill>
-	            <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-			  </se:Fill>
-			</se:Halo>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#000</se:SvgParameter>
             </se:Fill>
@@ -645,8 +645,8 @@
             <se:VendorOption name="forceLeftToRigth">false</se:VendorOption>
             <se:VendorOption name="conflictResolution">true</se:VendorOption>            
           </se:TextSymbolizer>
-		  </se:Rule>
-	  </se:FeatureTypeStyle>
+        </se:Rule>
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
