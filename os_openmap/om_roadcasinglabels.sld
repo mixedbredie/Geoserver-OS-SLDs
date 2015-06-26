@@ -309,8 +309,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">14</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -356,8 +356,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">14</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -403,7 +403,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
@@ -450,7 +450,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
@@ -497,7 +497,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-size">9</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
@@ -544,7 +544,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
@@ -591,7 +591,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
@@ -638,8 +638,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">14</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -685,8 +685,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">14</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -732,8 +732,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -779,8 +779,8 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">16</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:LinePlacement>
@@ -826,7 +826,7 @@
             <se:Font>
               <se:SvgParameter name="font-family">Euphemia</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-size">9</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
