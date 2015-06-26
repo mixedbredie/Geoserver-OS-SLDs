@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
-xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+                       xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>OS MasterMap&#174; Topography Layer (text) (greyscale style)</Name>
+    <Name>OS MasterMap Topography Layer (text) (greyscale style)</Name>
     <UserStyle>
       <Title>OS OnDemand WMS - Spring 2012 release</Title>
-      <Abstract>OS MasterMap&#174; Topography Layer. Ordnance Survey. &#169; Crown copyright and database rights 2012.</Abstract>
-      
-      <!--  Cartographic Text  -->
-      <!--  Adjust zoom levels to cut out above 1:3050 -->
-      <!--  Black text  -->
-      
+      <Abstract>OS MasterMap Topography Layer. Ordnance Survey. &#169; Crown copyright and database rights 2012.</Abstract>
+
+      <!--  Black Cartographic text  -->
+
       <FeatureTypeStyle>
         <Rule>
           <Name>Black text - 1:3,050 to 1:3,496</Name>
@@ -31,16 +29,12 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>heritageText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>3050</MinScaleDenominator>
-          <MaxScaleDenominator>4175</MaxScaleDenominator>
+          <MaxScaleDenominator>3496</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/pixel">
             <Label>
               <ogc:PropertyName>textstring</ogc:PropertyName>
@@ -50,12 +44,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
+
                 <Rotation>-
                   <ogc:Mul>
                     <ogc:PropertyName>txtrendering_orientation</ogc:PropertyName>
@@ -72,7 +67,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">14</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Black text - 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
@@ -84,10 +79,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -110,7 +101,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -132,7 +123,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Black text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
@@ -144,10 +135,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -170,7 +157,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -192,15 +179,14 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
-        
+
         <Rule>
           <Name>Black text - 1:1,300 to 1:1,850 (a)</Name>
           <ogc:Filter>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
+            <ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
+              <ogc:Literal>3</ogc:Literal>
+            </ogc:PropertyIsNotEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1300</MinScaleDenominator>
           <MaxScaleDenominator>1850</MaxScaleDenominator>
@@ -213,7 +199,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>2.66</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -235,7 +221,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">8</VendorOption>
           </TextSymbolizer>
         </Rule>
-        <Rule>
+        
+		<!--<Rule>
           <Name>Black text - 1:1,300 to 1:1,850 (b)</Name>
           <ogc:Filter>
             <ogc:And>
@@ -246,10 +233,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -276,7 +259,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.2</ogc:Literal>
+                  <ogc:Literal>3</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -297,8 +280,8 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="conflictResolution">true</VendorOption>
             <VendorOption name="maxDisplacement">6</VendorOption>
           </TextSymbolizer>
-        </Rule>
-        
+        </Rule>-->
+
         <Rule>
           <Name>Black text - 1:35 to 1:1,300</Name>
           <ogc:Filter>
@@ -310,10 +293,6 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                 <ogc:Literal>adminBoundaryText</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                <ogc:Literal>waterText</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
@@ -336,7 +315,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.2</ogc:Literal>
+                  <ogc:Literal>2.4</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -358,11 +337,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">0</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <!--  Administrative text  -->
-        
+
         <Rule>
-          <Name>Admin text - 1:3,050 to 1:3,496</Name>
+          <Name>Administrative text - 1:3,050 to 1:3,496</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -376,7 +355,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>3050</MinScaleDenominator>
-          <MaxScaleDenominator>4175</MaxScaleDenominator>
+          <MaxScaleDenominator>3496</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/pixel">
             <Label>
               <ogc:PropertyName>textstring</ogc:PropertyName>
@@ -386,7 +365,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -408,10 +387,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">14</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <!-- Admin text 1:2400 to 1:3050 -->
         <Rule>
-          <Name>Administrative text - 1:2,400 to 1:3,050</Name>
+          <Name>Administrative text 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -435,7 +414,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -457,9 +436,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <!--  Administrative text  -->
-        
+
         <Rule>
           <Name>Administrative text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
@@ -489,7 +468,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -511,7 +490,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Administrative text - 1:1,300 to 1:1,850</Name>
           <ogc:Filter>
@@ -541,7 +520,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.33</ogc:Literal>
+                  <ogc:Literal>2.66</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -563,9 +542,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
-          <Name>Administrative text - 1:38 to 1:1,300</Name>
+          <Name>Administrative text - 1:35 to 1:1,300</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -589,7 +568,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.2</ogc:Literal>
+                  <ogc:Literal>2.4</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -611,9 +590,9 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">0</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <!--  Historic text  -->
-        
+
         <Rule>
           <Name>Historic text - 1:3,050 to 1:3,496</Name>
           <ogc:Filter>
@@ -629,17 +608,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>3050</MinScaleDenominator>
-          <MaxScaleDenominator>4175</MaxScaleDenominator>
+          <MaxScaleDenominator>3496</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/pixel">
             <Label>
               <ogc:PropertyName>textstring</ogc:PropertyName>
             </Label>
             <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-family">Georgia</CssParameter>
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -661,7 +640,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">14</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Historic text - 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
@@ -683,11 +662,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>textstring</ogc:PropertyName>
             </Label>
             <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-family">Georgia</CssParameter>
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -709,7 +688,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Historic text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
@@ -735,11 +714,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>textstring</ogc:PropertyName>
             </Label>
             <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-family">Georgia</CssParameter>
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -761,7 +740,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Historic text - 1:1,300 to 1:1,850</Name>
           <ogc:Filter>
@@ -787,11 +766,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>textstring</ogc:PropertyName>
             </Label>
             <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-family">Georgia</CssParameter>
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.33</ogc:Literal>
+                  <ogc:Literal>2.66</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -813,7 +792,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <Rule>
           <Name>Historic text - 1:35 to 1:1,300</Name>
           <ogc:Filter>
@@ -835,11 +814,11 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <ogc:PropertyName>textstring</ogc:PropertyName>
             </Label>
             <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-family">Georgia</CssParameter>
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.2</ogc:Literal>
+                  <ogc:Literal>2.4</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -861,23 +840,17 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">0</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+
         <!--  Water text  -->
-        
+
         <Rule>
           <Name>Water text - 1:3,050 to 1:3,496</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                   <ogc:Literal>waterText</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
@@ -885,7 +858,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>3050</MinScaleDenominator>
-          <MaxScaleDenominator>4175</MaxScaleDenominator>
+          <MaxScaleDenominator>3496</MaxScaleDenominator>
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/pixel">
             <Label>
               <ogc:PropertyName>textstring</ogc:PropertyName>
@@ -895,7 +868,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -917,21 +890,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">14</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+<!--  Water text  -->
         <Rule>
           <Name>Water text - 1:2,400 to 1:3,050</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                   <ogc:Literal>waterText</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
@@ -949,7 +916,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -971,21 +938,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+<!--  Water text  -->
         <Rule>
           <Name>Water text - 1:1,850 to 1:2,400</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                   <ogc:Literal>waterText</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
                 <ogc:Literal>2</ogc:Literal>
@@ -1007,7 +968,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.6</ogc:Literal>
+                  <ogc:Literal>3.2</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -1029,21 +990,15 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+<!--  Water text  -->
         <Rule>
           <Name>Water text - 1:1,300 to 1:1,850</Name>
           <ogc:Filter>
             <ogc:And>
-              <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                   <ogc:Literal>waterText</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
               <ogc:PropertyIsGreaterThanOrEqualTo>
                 <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
                 <ogc:Literal>1.75</ogc:Literal>
@@ -1065,7 +1020,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.33</ogc:Literal>
+                  <ogc:Literal>2.66</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
@@ -1087,7 +1042,7 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
             <VendorOption name="maxDisplacement">10</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+<!--  Water text  -->
         <Rule>
           <Name>Water text - 1:35 to 1:1,300</Name>
           <ogc:Filter>
@@ -1096,16 +1051,10 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
                 <ogc:PropertyName>txtrendering_font</ogc:PropertyName>
                 <ogc:Literal>3</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
                   <ogc:Literal>waterText</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>osmmstyle_name</ogc:PropertyName>
-                  <ogc:Literal>waterText</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>35</MinScaleDenominator>
@@ -1119,13 +1068,13 @@ xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.
               <CssParameter name="font-size">
                 <ogc:Mul>
                   <ogc:PropertyName>txtrendering_height</ogc:PropertyName>
-                  <ogc:Literal>1.2</ogc:Literal>
+                  <ogc:Literal>2.4</ogc:Literal>
                 </ogc:Mul>
               </CssParameter>
             </Font>
             <LabelPlacement>
               <PointPlacement>
-                <Rotation>
+                <Rotation>-
                   <ogc:Mul>
                     <ogc:PropertyName>txtrendering_orientation</ogc:PropertyName>
                     <ogc:Literal>0.1</ogc:Literal>
